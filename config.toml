@@ -1,11 +1,10 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://cleanskinaesthetics.beauty/'
 languageCode = 'en-us'
-title = 'Clear Skin Aesthetics'
-theme = "clear-skin-theme"
-
-enableRobotsTXT = true
 publishDir = 'docs'
+theme = "clear-skin-theme"
+title = 'Clear Skin Aesthetics'
 removePathAccents = true
+enableRobotsTXT = true
 
 [build]
   buildDrafts = true
