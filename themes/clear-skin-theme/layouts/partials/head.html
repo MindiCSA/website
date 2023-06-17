@@ -1,18 +1,22 @@
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>{{ .Title }}</title>
-
-<!-- Tailwind CSS -->
-<link href="{{ "/css/tailwind.css" | relURL }}" rel="stylesheet">
-
-<!-- OpenGraph Meta -->
-<meta property="og:title" content="{{ .Title }}" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="{{ .Permalink }}" />
-<!-- Add more OpenGraph meta attributes as needed -->
-
-<!-- Twitter Card Meta -->
-<meta property="twitter:title" content="{{ .Title }}" />
-<meta property="twitter:card" content="summary" />
-<meta property="twitter:url" content="{{ .Permalink }}" />
-<!-- Add more Twitter Card meta attributes as needed -->
+<head>
+  <title>{{ replace .Name "-" " " | title }}</title>
+  <meta charset="UTF-8" />
+  <meta name="language" content="en" />
+  <meta
+    name="description"
+    content="{{ if .IsHome}}{{ .Site.Params.Description }}{{ else }}{{.Page.Params.Description}}{{ end }}"
+  />
+  <meta name="keywords" content="{{ delimit .Keywords " , " }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  {{ template "partials/twitter_cards.html" . }} {{ template
+  "_internal/opengraph.html" . }}
+  <link
+    rel="shortcut icon"
+    href="{{ .Site.BaseURL }}img/favicon.ico"
+    type="image/x-icon"
+  />
+  <link type="text/css" rel="stylesheet" href="{{ relURL "/css/tailwind.css" }}"
+  /> {{ template "partials/google_analytics.html" . }}
+</head>
