@@ -1,0 +1,18 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ .Title }}</title>
+
+<!-- Tailwind CSS -->
+<link href="{{ "css/tailwind.css" | resources.Get | relURL }}" rel="stylesheet">
+
+<!-- OpenGraph Meta -->
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<!-- Add more OpenGraph meta attributes as needed -->
+
+<!-- Twitter Card Meta -->
+<meta property="twitter:title" content="{{ .Title }}" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:url" content="{{ .Permalink }}" />
+<!-- Add more Twitter Card meta attributes as needed -->

@@ -1,0 +1,27 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Clear Skin Aesthetics'
+theme = "clear-skin-theme"
+
+enableRobotsTXT = true
+publishDir = 'docs'
+removePathAccents = true
+
+[build]
+  buildDrafts = true
+[[build.cachebusters]]
+  source = '(postcss|tailwind)\.config\.js'
+  target = 'css'
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[minify]
+  disableHTML = true
+
+[outputFormats.PostCSS]
+  baseName = "css/tailwind"
+  mediaType = "text/css"
+  isPlainText = true
+  notAlternative = true

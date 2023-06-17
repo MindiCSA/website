@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "tailwindcss": "^3.3.2"
+  },
+  "name": "mindisite",
+  "description": "Clean Skin Aesthetics company site.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "postcss resources/assets/css/tailwind.css -o static/css/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MindiCSA/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MindiCSA/website/issues"
+  },
+  "homepage": "https://github.com/MindiCSA/website#readme"
+}
