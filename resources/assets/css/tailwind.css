@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base {
+  html {
+    font-family: Lato, 'Roboto';
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Playfair Display';
+  }
+}

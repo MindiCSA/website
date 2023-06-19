@@ -12,8 +12,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "postcss resources/assets/css/tailwind.css -o static/css/tailwind.css",
-    "build:css": "tailwindcss -i ./resources/assets/css/tailwind.css -o ./static/css/tailwind.css"
+    "build:css": "tailwindcss -i ./resources/assets/css/tailwind.css -o ./static/css/tailwind.css",
+    "build:watch": "tailwindcss -i ./resources/assets/css/tailwind.css -o ./static/css/tailwind.css -w"
   },
   "repository": {
     "type": "git",

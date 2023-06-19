@@ -1,7 +1,6 @@
 baseURL = 'https://cleanskinaesthetics.beauty/'
 languageCode = 'en-us'
 publishDir = 'docs'
-theme = "clear-skin-theme"
 title = 'Clear Skin Aesthetics'
 removePathAccents = true
 enableRobotsTXT = true

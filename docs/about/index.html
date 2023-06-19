@@ -31,11 +31,11 @@
     href="https://cleanskinaesthetics.beauty/img/favicon.ico"
     type="image/x-icon"
   />
-  <link rel="stylesheet" href="https://cleanskinaesthetics.beauty/css/tailwindcss.css" />
-  
+  <link type="text/css" rel="stylesheet" href="/css/tailwind.css"
+  /> 
 </head>
 
-  <body>
+  <body class="bg-cream">
     <div class="bg-primary-500">
   <div class="container mx-auto py-2 px-4 flex items-center justify-between">
     <p class="text-white">Call us for an appointment today!</p>
@@ -46,37 +46,248 @@
     >
   </div>
 </div>
-
-<header class="bg-cream py-6">
-  <div class="container mx-auto flex items-center justify-between">
-    <h1 class="text-3xl font-bold text-gray-800">
-      Cosmetic Dermatology Practice
+<div class="relative min-h-screen flex items-center bg-hero-back">
+  
+  <div class="w-full md:w-1/2 px-6 py-16 md:py-32 md:text-left">
+    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-8">
+      Site Title
     </h1>
-    <nav>
-      <ul class="space-x-4">
-        <li class="inline-block">
-          <a href="#" class="text-gray-800 hover:text-gray-600">Home</a>
-        </li>
-        <li class="inline-block">
-          <a href="#" class="text-gray-800 hover:text-gray-600">Services</a>
-        </li>
-        <li class="inline-block">
-          <a href="#" class="text-gray-800 hover:text-gray-600">About</a>
-        </li>
-        <li class="inline-block">
-          <a href="#" class="text-gray-800 hover:text-gray-600">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <p class="text-lg text-gray-700 mb-8">Marketing Description</p>
+    <div class="space-x-4">
+      <a
+        href="#"
+        class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg"
+        >Call to Action 1</a
+      >
+      <a
+        href="#"
+        class="bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 px-4 rounded-lg"
+        >Call to Action 2</a
+      >
+    </div>
   </div>
-</header>
 
-    <main>  </main>
-    <footer class="bg-cream py-6">
-  <div class="container mx-auto text-center">
-    <p class="text-gray-800">
-      &copy; 2023 Cosmetic Dermatology Practice. All rights reserved.
-    </p>
+  
+  <div class="hidden md:block md:w-1/2">
+    <img
+      src="img/mindi-mattheus.jpeg"
+      alt="Attractive Woman"
+      class="object-cover h-full w-full"
+    />
+  </div>
+</div>
+
+    <main class="container mx-auto px-6 py-12">
+        
+    </main>
+    <footer class="bg-white">
+  <div class="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+        <div class="flex justify-center text-teal-600 sm:justify-start">
+          LOGO
+        </div>
+
+        <p
+          class="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+          consequuntur amet culpa cum itaque neque.
+        </p>
+
+        <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+          <li>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-teal-700 transition hover:text-teal-700/75"
+            >
+              <span class="sr-only">Facebook</span>
+              FB
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-teal-700 transition hover:text-teal-700/75"
+            >
+              <span class="sr-only">Instagram</span>
+              IN
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-teal-700 transition hover:text-teal-700/75"
+            >
+              <span class="sr-only">Twitter</span>
+              TW
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2"
+      >
+        <div class="text-center sm:text-left">
+          <p class="text-lg font-medium text-gray-900">About Us</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75"
+                href="/"
+              >
+                Company History
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75"
+                href="/"
+              >
+                Meet the Team
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75"
+                href="/"
+              >
+                Employee Handbook
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75"
+                href="/"
+              >
+                Careers
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center sm:text-left">
+          <p class="text-lg font-medium text-gray-900">Our Services</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75"
+                href="/"
+              >
+                Service HERE
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75"
+                href="/"
+              >
+                Service HERE
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75"
+                href="/"
+              >
+                Service HERE
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75"
+                href="/"
+              >
+                Service HERE
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center sm:text-left">
+          <p class="text-lg font-medium text-gray-900">Contact Us</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+            <li>
+              <a
+                class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                href="/"
+              >
+                EM
+
+                <span class="flex-1 text-gray-700">john@doe.com</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                href="/"
+              >
+                PH
+
+                <span class="flex-1 text-gray-700">0123456789</span>
+              </a>
+            </li>
+
+            <li
+              class="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+            >
+              <div>ADD</div>
+
+              <address class="-mt-0.5 flex-1 not-italic text-gray-700">
+                213 Lane, London, United Kingdom
+              </address>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 border-t border-gray-100 pt-6">
+      <div class="text-center sm:flex sm:justify-between sm:text-left">
+        <p class="text-sm text-gray-500">
+          <span class="block sm:inline">All rights reserved.</span>
+
+          <a
+            class="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+            href="/"
+          >
+            Terms & Conditions
+          </a>
+
+          <span>&middot;</span>
+
+          <a
+            class="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+            href="/"
+          >
+            Privacy Policy
+          </a>
+        </p>
+
+        <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+          &copy; 2022 Company Name
+        </p>
+      </div>
+    </div>
   </div>
 </footer>
 

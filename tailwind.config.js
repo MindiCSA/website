@@ -3,38 +3,33 @@ module.exports = {
   content: [
     './content/**/*.{html,js,markdown,md,mdx}',
     './docs/**/*.{html,js}',
-    './layouts/**/*.html',
-    './themes/**/*.html',
+    './layouts/**/*.{html,js}',
+    './themes/**/*.{html,js}',
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ['Playfair Display', 'serif'],
+        sans: ['Lato', 'Roboto', 'sans-serif'],
+      },
       colors: {
-        cream: '#F5F3F5',
-        primary: {
-          50: '#FDFCFE',
-          100: '#FAF9FD',
-          200: '#F5F3F5', // Cream
-          300: '#EDE9EE',
-          400: '#DDD9DF',
-          500: '#CCC6CA',
-          600: '#B1ADB6',
-          700: '#969096',
-          800: '#7B757D',
-          900: '#656070',
-        },
-        secondary: {
-          50: '#FAFAFC',
-          100: '#F5F6FA',
-          200: '#ECEAF4',
-          300: '#DFD6E9',
-          400: '#C2B3D3',
-          500: '#A592BE',
-          600: '#8B6F9F',
-          700: '#72527E',
-          800: '#593C5E',
-          900: '#472C47',
-        },
-        // Additional color variations can be added here
+        // Background Colors
+        'soft-pink': '#fdf5f1',
+        'light-pink': '#fbd9d0',
+        'pale-pink': '#ffcfc5',
+        'grayish-blue': '#919b9d',
+        'dark-grayish': '#485a5c',
+        'dark-black': '#101e1f',
+
+        // Primary Colors
+        primary: '#ffeae7',
+        'primary-light': '#fbd9d0',
+        'primary-dark': '#ffcfc5',
+
+        // Secondary Colors
+        secondary: '#919b9d',
+        'secondary-light': '#101e1f',
+        'secondary-dark': '#0d1a1b',
       },
     },
   },
