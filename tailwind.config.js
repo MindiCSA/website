@@ -14,11 +14,11 @@ module.exports = {
       },
       colors: {
         // Background Colors
-        'soft-pink': '#fdf5f1',
-        'light-pink': '#fbd9d0',
-        'pale-pink': '#ffcfc5',
-        'grayish-blue': '#919b9d',
-        'dark-grayish': '#485a5c',
+        'soft-color': '#eff1f0',
+        'light-color': '#ddd0c7',
+        'medium-color': '#c9aea5',
+        'heavy-color': '#c9aea5',
+        'heaviest-color': '#3e2312',
         'dark-black': '#101e1f',
 
         // Primary Colors
