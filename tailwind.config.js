@@ -31,6 +31,9 @@ module.exports = {
         'secondary-light': '#101e1f',
         'secondary-dark': '#0d1a1b',
       },
+      backgroundImage: {
+        'header-blend': "url('/img/color-blending')",
+      },
     },
   },
   plugins: [],
